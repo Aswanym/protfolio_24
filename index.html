@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Aswany M</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">My Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile_pic1.png" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Aswany M</h1>
+        <p class="section__text__p2">Python Django Backend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/aswany_python_Django_dev1.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/aswany-m-1696281b4/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Aswanym'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Backend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>APJ Abdul kalam Technological University
+                <br />B.Tech, Information Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a dedicated and enthusiastic python Django backend developer. Over the past two years, I have honed
+my skills in web development, specializing in ecommerce app development. My responsibilities included designing and optimizing the database
+schema, implementing secure payment gateways, and creating APIs for seamless integration with
+frontend systems.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore More</p>
+      <h1 class="title">Experience and Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <h3>Software Development Engineer I at Socially X <i>feb/2022 - Oct/2023</i></h3>
+              <div>
+                <ul>
+                  <li style="margin-left: 28px;">
+                    <p>Worked in the backend development of an e-commerce application</p>
+                  </li>
+                  <li style="margin-left: 28px;">
+                    <p>Designed, implemented, and maintained the backend architecture using Python DRF</p>
+                  </li>  
+                  <li style="margin-left: 28px;">
+                    <p>Successfully deployed applications on diverse platforms, including
+                      Heroku, Render, and E2E networks</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DRF</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postgresql</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Celery</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS ec2, s3</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project_re1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Swadesic app</h2>
+            <div class="btn-container">
+              <p>An e-commerce applicatin to accelerate the growth of small businesses</p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project_re2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sashaa Boutique</h2>
+            <div class="btn-container">
+              <p>An e-commerce application which sells clothings,  developed as part of a learning program.</p>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Aswanym/E-commerce'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:aswanymahendran222@gmail.com">aswanymahendran222@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/aswany-m-1696281b4/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 myself. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
